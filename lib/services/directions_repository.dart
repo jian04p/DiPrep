@@ -1,12 +1,13 @@
 import 'package:dio/dio.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class DirectionsRepository {
   static const String _baseUrl = 
       'https://maps.googleapis.com/maps/api/directions/json';
-  
-  final String _googleMapsApiKey = 'AIzaSyBOEwJkdOXn1fZX4ASt6Ph3D2HsqUkYGjM';
+
+  final String _googleMapsApiKey = dotenv.env['GOOGLE_MAPS_API_KEY'] ?? '';
   final Dio _dio = Dio();
 
   Future<DirectionsResult?> getDirections({
