@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="400" height="80" fill="#e0f2fe"/>
+  <!-- Water -->
+  <rect y="80" width="400" height="220" fill="url(#waterGradient)"/>
+  <!-- Wave patterns -->
+  <path d="M 0 120 Q 50 110 100 120 T 200 120 T 300 120 T 400 120" stroke="#0ea5e9" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 0 150 Q 50 140 100 150 T 200 150 T 300 150 T 400 150" stroke="#0ea5e9" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 0 180 Q 50 170 100 180 T 200 180 T 300 180 T 400 180" stroke="#0ea5e9" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- Building on high ground -->
+  <rect x="280" y="60" width="80" height="80" fill="#d4541f"/>
+  <polygon points="280,60 320,30 360,60" fill="#8b3412"/>
+  <rect x="295" y="80" width="15" height="15" fill="#4a5568"/>
+  <rect x="335" y="80" width="15" height="15" fill="#4a5568"/>
+  <!-- People going up -->
+  <circle cx="200" cy="140" r="8" fill="#fff"/>
+  <rect x="195" y="150" width="10" height="20" fill="#fff"/>
+  <circle cx="220" cy="135" r="8" fill="#fff"/>
+  <rect x="215" y="145" width="10" height="20" fill="#fff"/>
+  <!-- Evacuation arrows -->
+  <path d="M 150 180 L 180 160" stroke="#22c55e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 130 200 L 170 170" stroke="#22c55e" stroke-width="3" fill="none"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#22c55e"/>
+    </marker>
+  </defs>
+  <text x="200" y="290" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">FLOODING AWARENESS</text>
+</svg>

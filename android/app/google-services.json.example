@@ -1,0 +1,31 @@
+// TODO: Replace this placeholder with your actual Firebase configuration
+// 
+// To get your configuration:
+// 1. Go to https://console.firebase.google.com
+// 2. Create a new project or select existing project
+// 3. Click "Add app" and select Android
+// 4. Register your app with package name from android/app/build.gradle.kts
+// 5. Download google-services.json
+// 6. Replace this file with the downloaded google-services.json
+//
+// IMPORTANT: Delete this file and replace with actual google-services.json
+// for the SOS feature to work properly.
+
+{
+  "project_info": {
+    "project_number": "PLACEHOLDER",
+    "project_id": "diprep-flutter-placeholder",
+    "storage_bucket": "diprep-flutter-placeholder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "PLACEHOLDER",
+        "android_client_info": {
+          "package_name": "com.example.diprep_flutter"
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
