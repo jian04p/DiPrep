@@ -1,11 +1,12 @@
 import 'package:firebase_ai/firebase_ai.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class GeminiService {
   final GenerativeModel _model;
 
   GeminiService()
       : _model = FirebaseAI.googleAI(
-          apiKey: const String.fromEnvironment('GEMINI_API_KEY'),
+          apiKey: dotenv.env['GEMINI_API_KEY'],
         ).generativeModel(
           model: 'gemini-2.5-flash',
         );
